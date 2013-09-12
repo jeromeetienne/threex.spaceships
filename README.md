@@ -1,4 +1,4 @@
-threex.sample
+threex.spaceships
 ===================
 
 It is a 
@@ -11,8 +11,8 @@ The spaceships got the ability to shoot.
 
 Show Don't Tell
 ===============
-* [examples/basic.html](http://jeromeetienne.github.io/threex.sample/examples/basic.html)
-\[[view source](https://github.com/jeromeetienne/threex.sample/blob/master/examples/basic.html)\] :
+* [examples/basic.html](http://jeromeetienne.github.io/threex.spaceships/examples/basic.html)
+\[[view source](https://github.com/jeromeetienne/threex.spaceships/blob/master/examples/basic.html)\] :
 It shows the available spaceships.
 
 How To Install It
@@ -21,13 +21,13 @@ How To Install It
 You can install it via script tag
 
 ```html
-<script src='threex.sample.js'></script>
+<script src='threex.spaceships.js'></script>
 ```
 
 Or you can install with [bower](http://bower.io/), as you wish.
 
 ```bash
-bower install threex.sample
+bower install threex.spaceships
 ```
 
 How To Use It
