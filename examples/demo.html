@@ -35,20 +35,8 @@
 	//////////////////////////////////////////////////////////////////////////////////
 	//		comment								//
 	//////////////////////////////////////////////////////////////////////////////////
-	
-	
-	THREEx.SpaceShips.loadSpaceFighter01(function(object3d){
-		object3d.position.x	= -1
-		object3d.position.y	=  0.5
-		scene.add(object3d)
-	})
 
-	THREEx.SpaceShips.loadSpaceFighter02(function(object3d){
-		object3d.position.x	= 1
-		object3d.position.y	= 0.5
-		scene.add(object3d)
-	})
-
+	
 	THREEx.SpaceShips.loadSpaceFighter03(function(object3d){
 		var spaceship	= object3d
 		scene.add(spaceship)
@@ -80,17 +68,41 @@
 		scene.add(light)
 	})
 	
-	THREEx.SpaceShips.loadShuttle01(function(object3d){
-		object3d.position.x	= -1
-		object3d.position.y	= -0.5
-		scene.add(object3d)
-	})
+	//////////////////////////////////////////////////////////////////////////////////
+	//		comment								//
+	//////////////////////////////////////////////////////////////////////////////////
+	
+	var shootBase	= new THREEx.SpaceShips.Shoot()
+	var firing	= true;
+	onRenderFcts.push(function(delta, now){
 		
-	THREEx.SpaceShips.loadShuttle02(function(object3d){
-		object3d.position.x	=  1
-		object3d.position.y	= -0.5
-		scene.add(object3d)
 	})
+	
+	var Shoot	= function(position, velocity){
+		var object3d	= shootBase.clone();
+		object3d.position.copy(position)
+		scene.add(object3d)
+		var ttl		= 4
+		this.update	= function(delta, now){
+			ttl	-= delta;
+			if( ttl <= 0 ){
+				scene.remove(object3d)
+				return;
+			}
+			
+			object3d.position.add(velocity);
+		}	
+	}
+	
+	var Shooter	= function(position){
+		var shootMesh	= new THREEx.SpaceShips.Shoot()
+		var shoots	= []
+		
+		this.update	= function(delta, now){
+			
+		}
+	}
+
 
 	//////////////////////////////////////////////////////////////////////////////////
 	//		Camera Controls							//
