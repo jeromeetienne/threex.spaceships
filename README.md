@@ -1,6 +1,8 @@
 threex.spaceships
 ===================
 
+<iframe src="http://jeromeetienne.github.io/threex.spaceships/examples/basic.html"></iframe>
+
 It is a 
 [threex](http://jeromeetienne.github.io/threex/) extension 
 for 
