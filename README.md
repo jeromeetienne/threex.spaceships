@@ -100,7 +100,21 @@ THREEx.SpaceShips.loadSpaceFighter03(function(object3d){
 })
 ```
 
-
+Possible Improvements
+=====================
+* add a trail behind the ships and/or their shoots
+  * how to do a trail
+  * you get a geometry depending on the trail
+    * single plane
+      * single plane with a lot of segments for details
+    * multiple intersecting planes
+    * a cylinder
+  * how to make it move to appear as it follows the emitter object
+  * this is a trail so there is a moving object which emit this trail
+  * the moving object will need to push new coordinates to the trail
+  * update the trails based on emitter object 
+    * the coordinates are likely in world axis
+    * a quaternion for trail's orientation based on the velocity of emitter object
 
 
 
