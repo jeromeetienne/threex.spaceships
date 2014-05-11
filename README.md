@@ -9,6 +9,11 @@ Show Don't Tell
 \[[view source](https://github.com/jeromeetienne/threex.spaceships/blob/master/examples/basic.html)\] :
 It shows the available spaceships.
 
+
+A Screenshot
+============
+[![screenshot](https://raw.githubusercontent.com/jeromeetienne/threex.spaceships/master/examples/images/screenshot-threex-spaceships-512x512.jpg)](http://jeromeetienne.github.io/threex.spaceships/examples/basic.html)
+
 How To Install It
 =================
 
