@@ -1,7 +1,9 @@
 threex.spaceships
 ===================
 
-Threex.spaceships is a [three.js game extension](http://www.threejsgames.com/extensions/) to easily display a bunch of spaceships models. It has five different models, it contains 3 space fighters and 2 shuttles, plus the asset to make them shoot at each other. You can use them to have a whole fleet in your space battle games. You can even have intergalactic battles if you want! Try them out, they are out of this world!   
+Threex.spaceships is a [three.js game extension](http://www.threejsgames.com/extensions/) to easily display a bunch of spaceships models. It has five different models, it contains 3 space fighters and 2 shuttles, plus the asset to make them shoot at each other. 
+They comes from ["free models pack"](http://3drt.com/store/free-downloads/free-models-pack.html).
+You can use them to have a whole fleet in your space battle games. You can even have intergalactic battles if you want! Try them out, they are out of this world!   
 
 Show Don't Tell
 ===============
