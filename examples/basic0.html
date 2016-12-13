@@ -2,6 +2,7 @@
 <script src='vendor/three.js/build/three.min.js'></script>
 <script src='vendor/three.js/examples/js/loaders/OBJLoader.js'></script>
 <script src='vendor/three.js/examples/js/loaders/MTLLoader.js'></script>
+<script src='vendor/three.js/examples/js/loaders/OBJMTLLoader.js'></script>
 <script src='../threex.spaceships.js'></script>
 <body style='margin: 0px; background-color: #555555; overflow: hidden;'><script>
 	var renderer	= new THREE.WebGLRenderer();
@@ -18,7 +19,7 @@
 	//////////////////////////////////////////////////////////////////////////////////
 
 	;(function(){
-		var object3d	= new THREE.AmbientLight(0x101010*8)
+		var object3d	= new THREE.AmbientLight(0x101010)
 		object3d.name	= 'Ambient light'
 		scene.add(object3d)
 
@@ -42,6 +43,7 @@
 	//		comment								//
 	//////////////////////////////////////////////////////////////////////////////////
 	
+	
 	THREEx.SpaceShips.loadSpaceFighter01(function(object3d){
 		object3d.position.x	= -1
 		object3d.position.y	=  0.5
@@ -57,22 +59,22 @@
 	THREEx.SpaceShips.loadSpaceFighter03(function(object3d){
 		var spaceship	= object3d
 		scene.add(spaceship)
-	
+
 		var shoot	= new THREEx.SpaceShips.Shoot()
 		shoot.position.x= 0.5
 		shoot.position.z= 0.3
 		scene.add(shoot)
-		
+
 		var shoot	= new THREEx.SpaceShips.Shoot()
 		shoot.position.x=-0.5
 		shoot.position.z= 0.3
 		scene.add(shoot)
-		
+
 		var detonation	= new THREEx.SpaceShips.Detonation()
 		detonation.position.x= 0.5
 		detonation.position.z= 0.1
 		scene.add(detonation)
-		
+
 		var detonation	= new THREEx.SpaceShips.Detonation()
 		detonation.position.x=-0.5
 		detonation.position.z= 0.1
@@ -96,8 +98,6 @@
 		object3d.position.y	= -0.5
 		scene.add(object3d)
 	})
-
-
 
 	//////////////////////////////////////////////////////////////////////////////////
 	//		Camera Controls							//
